@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Instrumentid:</b>
+  <%= @order.instrumentID %>
+</p>
+
+<p>
+  <b>Accountid:</b>
+  <%= @order.accountID %>
+</p>
+
+<p>
+  <b>Side:</b>
+  <%= @order.side %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @order.quantity %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @order.price %>
+</p>
+
+<p>
+  <b>Venue:</b>
+  <%= @order.venue %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

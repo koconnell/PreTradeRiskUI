@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ordersizelimit:</b>
+  <%= @control.orderSizeLimit %>
+</p>
+
+<p>
+  <b>Longpositionlimit:</b>
+  <%= @control.longPositionLimit %>
+</p>
+
+<p>
+  <b>Shortpositionlimit:</b>
+  <%= @control.shortPositionLimit %>
+</p>
+
+
+<%= link_to 'Edit', edit_control_path(@control) %> |
+<%= link_to 'Back', controls_path %>

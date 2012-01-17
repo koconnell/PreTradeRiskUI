@@ -1,0 +1,28 @@
+<h3 class="content-header">Accounts:</h3>
+
+<table>
+  <tr>
+    <th> AccountID </th>
+    <th> Local Currency </th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @accounts.each do |account| %>
+  <tr>
+    <td><%= account.accountID %></td>
+    <td><%= account.localCurrency %></td>
+    <td><%= link_to 'Show', account %></td>
+    <td><%= link_to 'Edit', edit_account_path(account) %></td>
+    <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Account', new_account_path %>
+<br />
+<br />
+<%= link_to 'Pre-Trade Risk UI Home Page', root_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  orderSizeLimit: 1
+  longPositionLimit: 1
+  shortPositionLimit: 1
+
+two:
+  orderSizeLimit: 1
+  longPositionLimit: 1
+  shortPositionLimit: 1

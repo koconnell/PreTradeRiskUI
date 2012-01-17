@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  instrumentID: MyString
+  accountID: MyString
+  side: MyString
+  quantity: 1
+  price: 9.99
+  venue: MyString
+
+two:
+  instrumentID: MyString
+  accountID: MyString
+  side: MyString
+  quantity: 1
+  price: 9.99
+  venue: MyString

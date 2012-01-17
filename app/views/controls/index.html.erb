@@ -1,0 +1,30 @@
+<h3 class="content-header">Risk Controls:</h3>
+
+<table>
+  <tr>
+    <th> Order Size Limit </th>
+    <th> Long Position Limit </th>
+    <th> Short Position Limit </th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @controls.each do |control| %>
+  <tr>
+    <td><%= control.orderSizeLimit %></td>
+    <td><%= control.longPositionLimit %></td>
+    <td><%= control.shortPositionLimit %></td>
+    <td><%= link_to 'Show', control %></td>
+    <td><%= link_to 'Edit', edit_control_path(control) %></td>
+    <td><%= link_to 'Destroy', control, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Control', new_control_path %>
+<br />
+<br />
+<%= link_to 'Pre-Trade Risk UI', root_path %>
